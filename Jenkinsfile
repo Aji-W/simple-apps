@@ -1,5 +1,5 @@
 pipeline {
-    agent { label 'server1-Aji' }
+    agent { label 'Server1-Aji' }
 
     stages {
         stage('Pull SCM') {
