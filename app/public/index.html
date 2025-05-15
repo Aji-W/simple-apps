@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Pasaraya Kamis - E-commerce Nuansa Alam</title>
+  <title>Pasraya Kamis - E-commerce Nuansa Alam</title>
   <style>
     body {
       margin: 0;
@@ -54,6 +54,18 @@
       padding: 1rem;
       border-radius: 8px;
       text-align: center;
+      cursor: pointer;
+      transition: transform 0.2s ease;
+    }
+    .product-card:hover {
+      transform: scale(1.03);
+    }
+    .product-card img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 6px;
+      margin-bottom: 0.5rem;
     }
     footer {
       background-color: #d4eac7;
@@ -66,7 +78,7 @@
 </head>
 <body>
   <header>
-    <div class="logo">Pasaraya Kamis</div>
+    <div class="logo">Pasraya Kamis</div>
     <nav>
       <a href="#">Beranda</a>
       <a href="#produk">Produk</a>
@@ -76,31 +88,40 @@
   </header>
 
   <section class="hero">
-    <h1>Selamat datang di Pasaraya Kamis</h1>
+    <h1>Selamat datang di Pasraya Kamis</h1>
     <p>Pusat belanja produk alami dan ramah lingkungan</p>
   </section>
 
   <section class="products" id="produk">
-    <div class="product-card">
+    <a href="#keranjang" class="product-card">
+      <img src="https://via.placeholder.com/200x150?text=Sabun+Herbal" alt="Sabun Herbal">
       <h3>Sabun Herbal</h3>
       <p>Sabun alami dari bahan tumbuhan</p>
-    </div>
-    <div class="product-card">
+    </a>
+    <a href="#keranjang" class="product-card">
+      <img src="https://via.placeholder.com/200x150?text=Minyak+Esensial" alt="Minyak Esensial">
       <h3>Minyak Esensial</h3>
       <p>Minyak relaksasi dari ekstrak alami</p>
-    </div>
-    <div class="product-card">
+    </a>
+    <a href="#keranjang" class="product-card">
+      <img src="https://via.placeholder.com/200x150?text=Teh+Organik" alt="Teh Organik">
       <h3>Teh Organik</h3>
       <p>Teh pilihan dari kebun organik</p>
-    </div>
-    <div class="product-card">
+    </a>
+    <a href="#keranjang" class="product-card">
+      <img src="https://via.placeholder.com/200x150?text=Lilin+Aromaterapi" alt="Lilin Aromaterapi">
       <h3>Lilin Aromaterapi</h3>
       <p>Lilin dengan aroma alam yang menenangkan</p>
-    </div>
+    </a>
+  </section>
+
+  <section id="keranjang" style="padding: 2rem; background-color: #f0f8f0;">
+    <h2>Keranjang Belanja</h2>
+    <p>Produk yang Anda pilih akan muncul di sini (fitur ini masih dalam pengembangan).</p>
   </section>
 
   <footer>
-    &copy; 2025 Pasaraya Kamis. Semua hak dilindungi.
+    &copy; 2025 Pasraya Kamis. Semua hak dilindungi.
   </footer>
 </body>
 </html>
